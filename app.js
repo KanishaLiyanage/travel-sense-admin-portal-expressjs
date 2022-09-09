@@ -33,18 +33,16 @@ app.post('/addPlace', async (req, res) => {
     };
 
     try {
-        const response = await axios.post(localHostEndPoint, locationData);
+        const response = await axios.post(herokuEndPoint, locationData);
         if(response.status == 201){
             res.redirect('/');
         }
         
     } catch (e) {
         console.log(e);
-        res.status(500).json({ msg: "something bad has occurred." });
     }
 
 });
-
 
 
 app.listen(port, function () {
