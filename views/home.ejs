@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
     <h1>Add a Place</h1>
+    <form action="#" method="POST">
+
+        <header>
+            <h2>Add Travelling Location in Sri Lanka</h2>
+            <div>This form breaks at 600px and goes from a left-label form to a top-label form. At above 1200px, the
+                labels align right.</div>
+        </header>
+
+        <div>
+            <label class="desc" id="title1" for="Field1">Location Name:</label>
+            <div>
+                <input id="name" name="name" type="text" class="field text fn" value="" size="8" tabindex="1">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="title3" for="Field3">
+                Image Link:
+            </label>
+            <div>
+                <input id="image" name="image" type="text" spellcheck="false" value="" maxlength="255" tabindex="3">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="title4" for="Field4">
+                Description:
+            </label>
+
+            <div>
+                <textarea id="description" name="description" spellcheck="true" rows="10" cols="50"
+                    tabindex="4"></textarea>
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="title106" for="Field106">
+                Select District:
+            </label>
+            <div>
+                <select id="district" name="district" class="field select medium" tabindex="11">
+                    <option value="First Choice">Colombo</option>
+                    <option value="Second Choice">Gampaha</option>
+                    <option value="Third Choice">Kalutara</option>
+                    <option value="First Choice">Kandy</option>
+                    <option value="Second Choice">Matale</option>
+                    <option value="Third Choice">Nuwara Eliya</option>
+                    <option value="First Choice">Galle</option>
+                    <option value="Second Choice">Matara</option>
+                    <option value="Third Choice">Hambantota</option>
+                    <option value="First Choice">Jaffna</option>
+                    <option value="Second Choice">Kilinochchi</option>
+                    <option value="Third Choice">Mannar</option>
+                    <option value="First Choice">Vavuniya</option>
+                    <option value="Second Choice">Mullaitivu</option>
+                    <option value="Third Choice">Batticaloa</option>
+                    <option value="First Choice">Ampara</option>
+                    <option value="Second Choice">Trincomalee</option>
+                    <option value="Third Choice">Kurunegala</option>
+                    <option value="First Choice">Puttalam</option>
+                    <option value="Second Choice">Anuradhapura</option>
+                    <option value="Third Choice">Polonnaruwa</option>
+                    <option value="First Choice">Badulla</option>
+                    <option value="Second Choice">Moneragala</option>
+                    <option value="Third Choice">Ratnapura</option>
+                    <option value="Third Choice">Kegalle</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <input id="submit" name="submit" type="submit" value="Submit">
+            </div>
+        </div>
+
+    </form>
 </body>
+
 </html>
