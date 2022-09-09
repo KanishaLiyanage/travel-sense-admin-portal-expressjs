@@ -1,0 +1,21 @@
+{
+  "name": "travel-sense-app-admin-portal-expressjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.9.1",
+    "mongoose": "^6.6.0",
+    "nodemon": "^2.0.19"
+  }
+}
