@@ -11,7 +11,7 @@
 
 <body>
     <h1>Add a Place</h1>
-    <form action="#" method="POST">
+    <form action="/addPlace" method="POST">
 
         <header>
             <h2>Add Travelling Location in Sri Lanka</h2>
@@ -22,7 +22,7 @@
         <div>
             <label class="desc" id="title1" for="Field1">Location Name:</label>
             <div>
-                <input id="name" name="name" type="text" class="field text fn" value="" size="8" tabindex="1">
+                <input id="name" name="name" type="text" class="field text fn" value="" size="8" tabindex="1" required>
             </div>
         </div>
 
@@ -31,7 +31,7 @@
                 Image Link:
             </label>
             <div>
-                <input id="image" name="image" type="text" spellcheck="false" value="" maxlength="255" tabindex="3">
+                <input id="image" name="image" type="text" spellcheck="false" value="" maxlength="255" tabindex="3" required>
             </div>
         </div>
 
@@ -42,7 +42,7 @@
 
             <div>
                 <textarea id="description" name="description" spellcheck="true" rows="10" cols="50"
-                    tabindex="4"></textarea>
+                    tabindex="4" required></textarea>
             </div>
         </div>
 
@@ -51,32 +51,32 @@
                 Select District:
             </label>
             <div>
-                <select id="district" name="district" class="field select medium" tabindex="11">
-                    <option value="First Choice">Colombo</option>
-                    <option value="Second Choice">Gampaha</option>
-                    <option value="Third Choice">Kalutara</option>
-                    <option value="First Choice">Kandy</option>
-                    <option value="Second Choice">Matale</option>
-                    <option value="Third Choice">Nuwara Eliya</option>
-                    <option value="First Choice">Galle</option>
-                    <option value="Second Choice">Matara</option>
-                    <option value="Third Choice">Hambantota</option>
-                    <option value="First Choice">Jaffna</option>
-                    <option value="Second Choice">Kilinochchi</option>
-                    <option value="Third Choice">Mannar</option>
-                    <option value="First Choice">Vavuniya</option>
-                    <option value="Second Choice">Mullaitivu</option>
-                    <option value="Third Choice">Batticaloa</option>
-                    <option value="First Choice">Ampara</option>
-                    <option value="Second Choice">Trincomalee</option>
-                    <option value="Third Choice">Kurunegala</option>
-                    <option value="First Choice">Puttalam</option>
-                    <option value="Second Choice">Anuradhapura</option>
-                    <option value="Third Choice">Polonnaruwa</option>
-                    <option value="First Choice">Badulla</option>
-                    <option value="Second Choice">Moneragala</option>
-                    <option value="Third Choice">Ratnapura</option>
-                    <option value="Third Choice">Kegalle</option>
+                <select id="district" name="district" class="field select medium" tabindex="11" required>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Gampaha">Gampaha</option>
+                    <option value="Kalutara">Kalutara</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Matale">Matale</option>
+                    <option value="Nuwara Eliya">Nuwara Eliya</option>
+                    <option value="Galle">Galle</option>
+                    <option value="Matara">Matara</option>
+                    <option value="Hambantota">Hambantota</option>
+                    <option value="Jaffna">Jaffna</option>
+                    <option value="Kilinochchi">Kilinochchi</option>
+                    <option value="Mannar">Mannar</option>
+                    <option value="Vavuniya">Vavuniya</option>
+                    <option value="Mullaitivu">Mullaitivu</option>
+                    <option value="Batticaloa">Batticaloa</option>
+                    <option value="Ampara">Ampara</option>
+                    <option value="Trincomalee">Trincomalee</option>
+                    <option value="Kurunegala">Kurunegala</option>
+                    <option value="Puttalam">Puttalam</option>
+                    <option value="Anuradhapura">Anuradhapura</option>
+                    <option value="Polonnaruwa">Polonnaruwa</option>
+                    <option value="Badulla">Badulla</option>
+                    <option value="Moneragala">Moneragala</option>
+                    <option value="Ratnapura">Ratnapura</option>
+                    <option value="Kegalle">Kegalle</option>
                 </select>
             </div>
         </div>
