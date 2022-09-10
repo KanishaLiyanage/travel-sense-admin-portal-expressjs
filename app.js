@@ -15,6 +15,12 @@ app.get('/', function (req, res) {
 
 });
 
+app.get('/places', function (req, res) {
+
+    res.render("places");
+
+});
+
 var herokuEndPoint = "https://travel-sense-app-rest-api.herokuapp.com/admin/addPlace";
 var localHostEndPoint = "http://localhost:3000/admin/addPlace";
 
@@ -34,10 +40,10 @@ app.post('/addPlace', async (req, res) => {
 
     try {
         const response = await axios.post(herokuEndPoint, locationData);
-        if(response.status == 201){
+        if (response.status == 201) {
             res.redirect('/');
         }
-        
+
     } catch (e) {
         console.log(e);
     }
